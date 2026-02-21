@@ -1,0 +1,26 @@
+{
+    "name": "@etheon/ecp-gmail-example",
+    "private": true,
+    "version": "0.1.0",
+    "description": "ECP Gmail example - Event Source and Agent demo",
+    "license": "MIT",
+    "author": "Etheon",
+    "type": "module",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "typecheck": "tsc -p tsconfig.json --noEmit",
+        "start": "tsx src/main.ts"
+    },
+    "dependencies": {
+        "@etheon/ecp-event-source": "workspace:^",
+        "@etheon/ecp-agent": "workspace:^",
+        "zod": "catalog:runtimeShared"
+    },
+    "devDependencies": {
+        "@modelcontextprotocol/tsconfig": "workspace:^",
+        "tsx": "catalog:devTools",
+        "typescript": "catalog:devTools"
+    }
+}
